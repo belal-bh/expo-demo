@@ -1,20 +1,11 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+// To finalize installation of react-native-gesture-handler,
+// add the following at the top (make sure it's at the top and
+// there's nothing else before it) of your entry file, such as index.js or App.js
+import "react-native-gesture-handler";
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+import React from "react";
+import RouteContainer from "./src/routes/RouteContainer";
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App = () => {
+  return <RouteContainer />;
+};
